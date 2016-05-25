@@ -15,6 +15,11 @@
 		400887091CF5CDB200459DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400887071CF5CDB200459DE2 /* LaunchScreen.storyboard */; };
 		400887141CF5CDB200459DE2 /* TransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 400887131CF5CDB200459DE2 /* TransitionTests.m */; };
 		4008871F1CF5CDB200459DE2 /* TransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4008871E1CF5CDB200459DE2 /* TransitionUITests.m */; };
+		4008872E1CF5CDDA00459DE2 /* SeccondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4008872D1CF5CDDA00459DE2 /* SeccondViewController.m */; };
+		400887311CF5CE0100459DE2 /* PushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 400887301CF5CE0100459DE2 /* PushTransition.m */; };
+		400887331CF5CEBF00459DE2 /* wuyanzu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 400887321CF5CEBF00459DE2 /* wuyanzu.jpg */; };
+		400887361CF5DC0200459DE2 /* PushTransitonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 400887351CF5DC0200459DE2 /* PushTransitonTest.m */; };
+		400887391CF5E25400459DE2 /* PopTransiton.m in Sources */ = {isa = PBXBuildFile; fileRef = 400887381CF5E25400459DE2 /* PopTransiton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		4008871A1CF5CDB200459DE2 /* TransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4008871E1CF5CDB200459DE2 /* TransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionUITests.m; sourceTree = "<group>"; };
 		400887201CF5CDB200459DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4008872C1CF5CDDA00459DE2 /* SeccondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeccondViewController.h; sourceTree = "<group>"; };
+		4008872D1CF5CDDA00459DE2 /* SeccondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeccondViewController.m; sourceTree = "<group>"; };
+		4008872F1CF5CE0100459DE2 /* PushTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushTransition.h; sourceTree = "<group>"; };
+		400887301CF5CE0100459DE2 /* PushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransition.m; sourceTree = "<group>"; };
+		400887321CF5CEBF00459DE2 /* wuyanzu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wuyanzu.jpg; sourceTree = "<group>"; };
+		400887341CF5DC0200459DE2 /* PushTransitonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushTransitonTest.h; sourceTree = "<group>"; };
+		400887351CF5DC0200459DE2 /* PushTransitonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransitonTest.m; sourceTree = "<group>"; };
+		400887371CF5E25400459DE2 /* PopTransiton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTransiton.h; sourceTree = "<group>"; };
+		400887381CF5E25400459DE2 /* PopTransiton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTransiton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +115,19 @@
 		400886F81CF5CDB200459DE2 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				400887321CF5CEBF00459DE2 /* wuyanzu.jpg */,
 				400886FC1CF5CDB200459DE2 /* AppDelegate.h */,
 				400886FD1CF5CDB200459DE2 /* AppDelegate.m */,
 				400886FF1CF5CDB200459DE2 /* ViewController.h */,
 				400887001CF5CDB200459DE2 /* ViewController.m */,
+				4008872C1CF5CDDA00459DE2 /* SeccondViewController.h */,
+				4008872D1CF5CDDA00459DE2 /* SeccondViewController.m */,
+				400887341CF5DC0200459DE2 /* PushTransitonTest.h */,
+				400887351CF5DC0200459DE2 /* PushTransitonTest.m */,
+				400887371CF5E25400459DE2 /* PopTransiton.h */,
+				400887381CF5E25400459DE2 /* PopTransiton.m */,
+				4008872F1CF5CE0100459DE2 /* PushTransition.h */,
+				400887301CF5CE0100459DE2 /* PushTransition.m */,
 				400887021CF5CDB200459DE2 /* Main.storyboard */,
 				400887051CF5CDB200459DE2 /* Assets.xcassets */,
 				400887071CF5CDB200459DE2 /* LaunchScreen.storyboard */,
@@ -244,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				400887091CF5CDB200459DE2 /* LaunchScreen.storyboard in Resources */,
+				400887331CF5CEBF00459DE2 /* wuyanzu.jpg in Resources */,
 				400887061CF5CDB200459DE2 /* Assets.xcassets in Resources */,
 				400887041CF5CDB200459DE2 /* Main.storyboard in Resources */,
 			);
@@ -270,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400887361CF5DC0200459DE2 /* PushTransitonTest.m in Sources */,
+				400887391CF5E25400459DE2 /* PopTransiton.m in Sources */,
+				4008872E1CF5CDDA00459DE2 /* SeccondViewController.m in Sources */,
 				400887011CF5CDB200459DE2 /* ViewController.m in Sources */,
 				400886FE1CF5CDB200459DE2 /* AppDelegate.m in Sources */,
+				400887311CF5CE0100459DE2 /* PushTransition.m in Sources */,
 				400886FB1CF5CDB200459DE2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
