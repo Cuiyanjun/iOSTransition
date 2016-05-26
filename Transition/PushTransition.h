@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface PushTransition : NSObject<UIViewControllerAnimatedTransitioning, UIViewControllerInteractiveTransitioning>
+@interface PushTransition : NSObject<UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic, strong) id transitionContext;
 

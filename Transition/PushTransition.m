@@ -41,11 +41,7 @@
     [toViewController.view.layer addAnimation:animation forKey:@"rotateAnimation"];
     
 }
-//- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning>)transitionContext
-//{
-//    
-//
-//}
+
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {

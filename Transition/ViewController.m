@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 #import "PushTransition.h"
-#import "PushTransitonTest.h"
-
+#import "PushTransitionTest.h"
 
 #define DEGREES_TO_RADIANS(degrees)((M_PI * degrees)/180)
 
@@ -29,6 +28,9 @@
 {
     [super viewDidAppear:animated];
     self.navigationController.delegate = self;
+    
+    // 假如你得动画总时长是5秒钟，那么当你的手指从640 -》 0这个过程的时候
+    // 每移动一个pixel的位置，你的动画就执行了5.0/640秒的时间
 }
 
 - (void)viewDidLoad {
@@ -44,8 +46,10 @@
     [self.view addSubview:redView];
     
     CATransform3D transform = CATransform3DIdentity;
-    transform.m34 = -1/500.0;
+    transform.m34 = -1/2000.0;
     redView.layer.transform = transform;
+    
+    
     
 // Do any additional setup after loading the view, typically from a nib.
 }
@@ -87,7 +91,7 @@
 - (IBAction)pushToSecond:(id)sender
 {
     [self performSegueWithIdentifier:@"kPushToSecond" sender:nil];
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
+//    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
 //    animation.duration = 0.7;
 //    animation.fromValue = @(DEGREES_TO_RADIANS(180));
 //    animation.toValue = @(0);
@@ -101,7 +105,7 @@
                                                            toViewController:(UIViewController *)toVC
 {
     if (operation == UINavigationControllerOperationPush) {
-        return [[PushTransitonTest alloc] init];
+        return [[PushTransitionTest alloc] init];
     }
     return nil;
 }
